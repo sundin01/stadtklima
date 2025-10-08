@@ -1,0 +1,60 @@
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Reanalysis Data Sets</h1>
+</div>
+<div class="card">
+    <div class="card-body">
+        <p class="card-text">
+            The climatology group of the Institute of Geography produced a palaeo-reanalysis, 
+            a monthly, global, 3-dimensional reconstruction using the Ensemble Kalman Filter 
+            in an offline assimilation approach. In contrast to online data assimilation, 
+            in which the updated model state at every assimilation time step is used to initialize 
+            a new forecast, offline data assimilation only performs the update. 
+            This is possible because for atmospheric models, and over the time scale of the assimilation 
+            (in this case six months), atmospheric initial conditions hardly matter. 
+            The product is the "Modern Era Reanalysis"
+            (ModE-RA, Valler et al. 2024 [<a href="https://www.nature.com/articles/s41597-023-02733-8/" target="_blank">https://www.nature.com/articles/s41597-023-02733-8</a>]), 
+            which covers the period from 1421 to 2008. ModE-RA provides monthly output using a seasonal 
+            assimilation window, such that monthly mean instrumental or documentary data can be assimilated 
+            simultaneously with seasonal proxies (e.g. tree rings, plant or ice phenology). 
+            The model prior or background xb is taken from an ensemble of 20 atmospheric model simulations (ModE-Sim). 
+            In addition to ModE-RA, another data set termed ModE-RAclim is generated in which the prior is not taken 
+            from the year to be reconstructed, but is a random sample of 100 model years. 
+            This means that ModE-RAclim does not see the time-varying boundary conditions of the model
+            (such as sea-surface temperatures or volcanic forcing) but only depends on the boundary conditions
+            of the model and does not see the observations. Analyzing all three products together 
+            (ModE-RA, ModE-RAclim and ModE-Sim) allows for disentangling where the information in ModE-RA comes from.
+        </p>
+        <p class="card-text">
+            Easy access to the data set is possible through the site: <a href="https://mode-ra.unibe.ch/climeapp//" target="_blank">https://mode-ra.unibe.ch/climeapp/</a>. 
+            Here you can choose the data set to be analysed (ModE-RA, ModE-RAclim and ModE-Sim), 
+            the variable, season and time period. It allows to display anomalies, composites, correlation and regression analyses. 
+        </p>
+    </div>
+</div>
+<p></p>
+<div class="alert alert-success" role="alert">
+    <h4 class="alert-heading">Exercise</h4>
+    <p class="font-italic"><i class="far fa-clock"></i>These two exercises will take you ca. 15 min.</p>
+    <hr>
+    <p class="card-text">
+        Calculate anomalies for February 1822 with respect to the period 1700-1850. 
+        Where are the highest anomaly, and how much warmer than average was it?
+    </p>
+
+    <p class="card-text">
+        Take the following list of volcanic years (1453, 1458, 1477, 1512, 1585, 1595, 1601, 1641, 1667, 1673, 1695, 1729, 1739, 1762, 1809, 1815, 1832, 1836, 1862, 1884, 1912, 1964, 1991) 
+        and the same reference period as above. Analyse boreal summer precipitation anomalies in Africa and temperature anomalies over Europe. Compare ModE-RA, ModE-Sim and ModE-RAclim.
+    </p>
+
+    <p class="card-text">
+        Regression: Define the independent variable as the average sea-surface temperature in the area [180W-150W, 5S-5N] (an El Niño index) in DJF and calculate regression coefficients with global temperature in DJF.
+    </p>
+
+    <p class="card-text">
+        Here is a possible <a href="data/Climate_Data_Solution.pdf" target="_blank">solution</a>.
+    </p>
+</div>
+<div class="d-flex justify-content-between">
+    <button type="button" class="btn btn-outline-secondary btn-lg" onclick="contentManager.setContent('simulation');" ><- Previous</button>
+    <button type="button" class="btn btn-outline-secondary btn-lg" onclick="contentManager.setContent('downscaling-entry');" >Next -></button>
+</div>
