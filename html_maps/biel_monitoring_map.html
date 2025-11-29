@@ -1,0 +1,2258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ef370eb89b20a6d830cc7edf9c94c781 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ef370eb89b20a6d830cc7edf9c94c781" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ef370eb89b20a6d830cc7edf9c94c781 = L.map(
+                "map_ef370eb89b20a6d830cc7edf9c94c781",
+                {
+                    center: [47.14, 7.25],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4e379c7fc9748b29b0a5a6c79f04c9bc = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4e379c7fc9748b29b0a5a6c79f04c9bc.addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var rectangle_d36b7c6c22406cf2df4ffa0c59c69169 = L.rectangle(
+                [[47.1127730564401, 7.214640599139733], [47.184875016301, 7.306692435604959]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var marker_3edb3387d3a27f4dd075bc22329a43b5 = L.marker(
+                [47.13071, 7.24101],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_3152ecf193d3834afcb3c6e930459c2b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd553de087f912701e0a7f6e4f7615dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f0588d47aac8f6c67bbf6fa8d77b26c8 = $(`<div id="html_f0588d47aac8f6c67bbf6fa8d77b26c8" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 0, 'LCD': 'Log_201', 'Location': ' Robert Walser Platz ', 'Longitude': 7.24101, 'Latitude': 47.13071, 'Altitude': 433.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_fd553de087f912701e0a7f6e4f7615dc.setContent(html_f0588d47aac8f6c67bbf6fa8d77b26c8);
+            
+        
+
+        marker_3edb3387d3a27f4dd075bc22329a43b5.bindPopup(popup_fd553de087f912701e0a7f6e4f7615dc)
+        ;
+
+        
+    
+    
+                marker_3edb3387d3a27f4dd075bc22329a43b5.setIcon(icon_3152ecf193d3834afcb3c6e930459c2b);
+            
+    
+            var marker_8d1bdb1be0e24f9af6da211240090670 = L.marker(
+                [47.1307, 7.23625],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_8f0241f3c256a6217d0f838f807472ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ceb983ccd9ddf0a1a66b0f9c2d2fabf2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2eb788d1a1c63d3f2c774226da5ae06c = $(`<div id="html_2eb788d1a1c63d3f2c774226da5ae06c" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 1, 'LCD': 'Log_202', 'Location': ' Schifflaendte Biel ', 'Longitude': 7.23625, 'Latitude': 47.1307, 'Altitude': 430.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'pillar of timetable display', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_ceb983ccd9ddf0a1a66b0f9c2d2fabf2.setContent(html_2eb788d1a1c63d3f2c774226da5ae06c);
+            
+        
+
+        marker_8d1bdb1be0e24f9af6da211240090670.bindPopup(popup_ceb983ccd9ddf0a1a66b0f9c2d2fabf2)
+        ;
+
+        
+    
+    
+                marker_8d1bdb1be0e24f9af6da211240090670.setIcon(icon_8f0241f3c256a6217d0f838f807472ee);
+            
+    
+            var marker_e0cd173dbc0f159ef0c8f1997d82bd16 = L.marker(
+                [47.13665, 7.24699],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_101c331ce7fa7825e3bc448a260a3560 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_022850e476d1700ed81d35a207215465 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f0ae6562bde4a3be05093427280e0b70 = $(`<div id="html_f0ae6562bde4a3be05093427280e0b70" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 2, 'LCD': 'Log_203 ', 'Location': ' Zentralplatz ', 'Longitude': 7.24699, 'Latitude': 47.13665, 'Altitude': 433.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': '2024-08-21', 'Grafana': 'adafd8db7132', 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_022850e476d1700ed81d35a207215465.setContent(html_f0ae6562bde4a3be05093427280e0b70);
+            
+        
+
+        marker_e0cd173dbc0f159ef0c8f1997d82bd16.bindPopup(popup_022850e476d1700ed81d35a207215465)
+        ;
+
+        
+    
+    
+                marker_e0cd173dbc0f159ef0c8f1997d82bd16.setIcon(icon_101c331ce7fa7825e3bc448a260a3560);
+            
+    
+            var marker_a0b2dab79a315b6c86d717c9872bb4d8 = L.marker(
+                [47.14111, 7.25349],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_4195cff2c665091d07e85a588dbaf051 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_949265fac21c15d6b2c6e7c8fea94f09 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d7e0dc916619a144433d6e0e2196364 = $(`<div id="html_6d7e0dc916619a144433d6e0e2196364" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 3, 'LCD': 'Log_204 ', 'Location': ' Stadtpark ', 'Longitude': 7.25349, 'Latitude': 47.14111, 'Altitude': 435.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_949265fac21c15d6b2c6e7c8fea94f09.setContent(html_6d7e0dc916619a144433d6e0e2196364);
+            
+        
+
+        marker_a0b2dab79a315b6c86d717c9872bb4d8.bindPopup(popup_949265fac21c15d6b2c6e7c8fea94f09)
+        ;
+
+        
+    
+    
+                marker_a0b2dab79a315b6c86d717c9872bb4d8.setIcon(icon_4195cff2c665091d07e85a588dbaf051);
+            
+    
+            var marker_6f61cb0d6b9977c31294475c23341b7c = L.marker(
+                [47.14475, 7.26514],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_f76377eee234ac47391e252f087cc0a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_75bc8ed83f69d01486c7683e4d86e6d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_154a86319fada2ff4d0f8289a0692877 = $(`<div id="html_154a86319fada2ff4d0f8289a0692877" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 4, 'LCD': 'Log_205 ', 'Location': ' Schuessinsel ', 'Longitude': 7.26514, 'Latitude': 47.14475, 'Altitude': 440.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_75bc8ed83f69d01486c7683e4d86e6d7.setContent(html_154a86319fada2ff4d0f8289a0692877);
+            
+        
+
+        marker_6f61cb0d6b9977c31294475c23341b7c.bindPopup(popup_75bc8ed83f69d01486c7683e4d86e6d7)
+        ;
+
+        
+    
+    
+                marker_6f61cb0d6b9977c31294475c23341b7c.setIcon(icon_f76377eee234ac47391e252f087cc0a4);
+            
+    
+            var marker_351e9aef2d331b9a00ed569b26513a8b = L.marker(
+                [47.13831, 7.2955],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_f7ce4540dc85ba8201d0aa071bc0a5bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_15f04de24c2b8c74fec49e476c4f24b9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_37c04a8ea5e49003e2ba54deb69beda0 = $(`<div id="html_37c04a8ea5e49003e2ba54deb69beda0" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 5, 'LCD': 'Log_206 ', 'Location': ' Stoeckenmatt ', 'Longitude': 7.2955, 'Latitude': 47.13831, 'Altitude': 437.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_15f04de24c2b8c74fec49e476c4f24b9.setContent(html_37c04a8ea5e49003e2ba54deb69beda0);
+            
+        
+
+        marker_351e9aef2d331b9a00ed569b26513a8b.bindPopup(popup_15f04de24c2b8c74fec49e476c4f24b9)
+        ;
+
+        
+    
+    
+                marker_351e9aef2d331b9a00ed569b26513a8b.setIcon(icon_f7ce4540dc85ba8201d0aa071bc0a5bf);
+            
+    
+            var marker_27d3dee0b4ce392a7b8c8e7af1f7cf0a = L.marker(
+                [47.17903, 7.41504],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_46c6303b63fb64d231dab8ea4ea1aeba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_82ce7c8dbd4d3926da2bbbe1243b7096 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_682f7de358bb935be589315237645392 = $(`<div id="html_682f7de358bb935be589315237645392" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 6, 'LCD': 'Log_207 ', 'Location': ' MeteoSchweiz (3m) ', 'Longitude': 7.41504, 'Latitude': 47.17903, 'Altitude': 427.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'wooden slat', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_82ce7c8dbd4d3926da2bbbe1243b7096.setContent(html_682f7de358bb935be589315237645392);
+            
+        
+
+        marker_27d3dee0b4ce392a7b8c8e7af1f7cf0a.bindPopup(popup_82ce7c8dbd4d3926da2bbbe1243b7096)
+        ;
+
+        
+    
+    
+                marker_27d3dee0b4ce392a7b8c8e7af1f7cf0a.setIcon(icon_46c6303b63fb64d231dab8ea4ea1aeba);
+            
+    
+            var marker_7402691ef69274032634771abdcb9d5b = L.marker(
+                [47.13002, 7.26234],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_4e38347457899aef1e60224d792f51c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_673d2cd00b2f075d246a67b3a8bc671b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d3157ef0083c0454be8f6360c8f37f20 = $(`<div id="html_d3157ef0083c0454be8f6360c8f37f20" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 7, 'LCD': 'Log_208 ', 'Location': ' Brueggmattenweg ', 'Longitude': 7.26234, 'Latitude': 47.13002, 'Altitude': 437.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_673d2cd00b2f075d246a67b3a8bc671b.setContent(html_d3157ef0083c0454be8f6360c8f37f20);
+            
+        
+
+        marker_7402691ef69274032634771abdcb9d5b.bindPopup(popup_673d2cd00b2f075d246a67b3a8bc671b)
+        ;
+
+        
+    
+    
+                marker_7402691ef69274032634771abdcb9d5b.setIcon(icon_4e38347457899aef1e60224d792f51c7);
+            
+    
+            var marker_c6166b3b157e076809f944f6e2fc0a1f = L.marker(
+                [47.1354, 7.25578],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_9a323aba1b9b2849395aa31c745b3ab5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f18763a40662e7685c08d6de0f47bd1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2855f79b65be8128a5e110ac84544b00 = $(`<div id="html_2855f79b65be8128a5e110ac84544b00" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 8, 'LCD': 'Log_209 ', 'Location': ' Pianostr. ', 'Longitude': 7.25578, 'Latitude': 47.1354, 'Altitude': 434.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_7f18763a40662e7685c08d6de0f47bd1.setContent(html_2855f79b65be8128a5e110ac84544b00);
+            
+        
+
+        marker_c6166b3b157e076809f944f6e2fc0a1f.bindPopup(popup_7f18763a40662e7685c08d6de0f47bd1)
+        ;
+
+        
+    
+    
+                marker_c6166b3b157e076809f944f6e2fc0a1f.setIcon(icon_9a323aba1b9b2849395aa31c745b3ab5);
+            
+    
+            var marker_5fc7aa876c8e65f3f8c2004b88eca78f = L.marker(
+                [47.13498, 7.24879],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_125643541976875a244e3ba392015183 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0a33da51b91d42ee948949b8cba876b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_03ee4bc88bd7c6dde7a3a0f6bf52d19a = $(`<div id="html_03ee4bc88bd7c6dde7a3a0f6bf52d19a" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 9, 'LCD': 'Log_210', 'Location': ' Kongresszentrum ', 'Longitude': 7.24879, 'Latitude': 47.13498, 'Altitude': 433.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'pillar', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_0a33da51b91d42ee948949b8cba876b6.setContent(html_03ee4bc88bd7c6dde7a3a0f6bf52d19a);
+            
+        
+
+        marker_5fc7aa876c8e65f3f8c2004b88eca78f.bindPopup(popup_0a33da51b91d42ee948949b8cba876b6)
+        ;
+
+        
+    
+    
+                marker_5fc7aa876c8e65f3f8c2004b88eca78f.setIcon(icon_125643541976875a244e3ba392015183);
+            
+    
+            var marker_0361ea4f08b9d8897023a09959d07c9a = L.marker(
+                [47.12816, 7.24923],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_cbb8b9d931bf28af3e9ad91fac56857a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5a2042f97864e228455407dfa0f5c01c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_580370b4dd0801f5b5f8495b5a5bedc0 = $(`<div id="html_580370b4dd0801f5b5f8495b5a5bedc0" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 10, 'LCD': 'Log_211', 'Location': ' Alex. Moser Strasse ', 'Longitude': 7.24923, 'Latitude': 47.12816, 'Altitude': 437.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_5a2042f97864e228455407dfa0f5c01c.setContent(html_580370b4dd0801f5b5f8495b5a5bedc0);
+            
+        
+
+        marker_0361ea4f08b9d8897023a09959d07c9a.bindPopup(popup_5a2042f97864e228455407dfa0f5c01c)
+        ;
+
+        
+    
+    
+                marker_0361ea4f08b9d8897023a09959d07c9a.setIcon(icon_cbb8b9d931bf28af3e9ad91fac56857a);
+            
+    
+            var marker_ad2568ad7f3b89f0ba42e93f8af9ae93 = L.marker(
+                [47.13403, 7.2306],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_c9b93be6064b5449625f7b8317d6289f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ac06f671f62c5886e5b05946cea5167 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39e96c3f996a483921215193ceee79b1 = $(`<div id="html_39e96c3f996a483921215193ceee79b1" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 11, 'LCD': 'Log_212', 'Location': ' Strandboden ', 'Longitude': 7.2306, 'Latitude': 47.13403, 'Altitude': 430.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': '2024-08-21', 'Grafana': '814be9fbe0d4', 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_0ac06f671f62c5886e5b05946cea5167.setContent(html_39e96c3f996a483921215193ceee79b1);
+            
+        
+
+        marker_ad2568ad7f3b89f0ba42e93f8af9ae93.bindPopup(popup_0ac06f671f62c5886e5b05946cea5167)
+        ;
+
+        
+    
+    
+                marker_ad2568ad7f3b89f0ba42e93f8af9ae93.setIcon(icon_c9b93be6064b5449625f7b8317d6289f);
+            
+    
+            var marker_99db471b15579bda1640bddcbb50620d = L.marker(
+                [47.11993, 7.25397],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_2e2e019fe54855821ed5a4cf39683ece = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5cf927e83fc4bdb3f9cdb1fd46106f44 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52a018b034e5fb92d2d68c52905bc250 = $(`<div id="html_52a018b034e5fb92d2d68c52905bc250" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 12, 'LCD': 'Log_213', 'Location': ' Moosbrueggli ', 'Longitude': 7.25397, 'Latitude': 47.11993, 'Altitude': 433.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_5cf927e83fc4bdb3f9cdb1fd46106f44.setContent(html_52a018b034e5fb92d2d68c52905bc250);
+            
+        
+
+        marker_99db471b15579bda1640bddcbb50620d.bindPopup(popup_5cf927e83fc4bdb3f9cdb1fd46106f44)
+        ;
+
+        
+    
+    
+                marker_99db471b15579bda1640bddcbb50620d.setIcon(icon_2e2e019fe54855821ed5a4cf39683ece);
+            
+    
+            var marker_960d4c442a8e15149f000985c875ea42 = L.marker(
+                [47.12847, 7.26641],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_ca55f2407a90c012cb4da67e8c5ab958 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_51f7324385a7fa1b8eee623d236d7daf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9324580a3d1a77b55c0ee88fd379126a = $(`<div id="html_9324580a3d1a77b55c0ee88fd379126a" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 13, 'LCD': 'Log_214', 'Location': ' Laengholzwald ', 'Longitude': 7.26641, 'Latitude': 47.12847, 'Altitude': 455.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'tree', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_51f7324385a7fa1b8eee623d236d7daf.setContent(html_9324580a3d1a77b55c0ee88fd379126a);
+            
+        
+
+        marker_960d4c442a8e15149f000985c875ea42.bindPopup(popup_51f7324385a7fa1b8eee623d236d7daf)
+        ;
+
+        
+    
+    
+                marker_960d4c442a8e15149f000985c875ea42.setIcon(icon_ca55f2407a90c012cb4da67e8c5ab958);
+            
+    
+            var marker_eed098a06de3fa52a23fc3b71d1b85d3 = L.marker(
+                [47.14202, 7.24565],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_f401a840e740a01245bebbee763126d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c09a60c504041a95f5666c1b282c0c32 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_45d18ba7d44cf988737d698253551b92 = $(`<div id="html_45d18ba7d44cf988737d698253551b92" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 14, 'LCD': 'Log_215', 'Location': ' Altstadt ', 'Longitude': 7.24565, 'Latitude': 47.14202, 'Altitude': 442.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': '2024-08-21', 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_c09a60c504041a95f5666c1b282c0c32.setContent(html_45d18ba7d44cf988737d698253551b92);
+            
+        
+
+        marker_eed098a06de3fa52a23fc3b71d1b85d3.bindPopup(popup_c09a60c504041a95f5666c1b282c0c32)
+        ;
+
+        
+    
+    
+                marker_eed098a06de3fa52a23fc3b71d1b85d3.setIcon(icon_f401a840e740a01245bebbee763126d6);
+            
+    
+            var marker_948090c09ce9705af9c1cc58139ae313 = L.marker(
+                [47.12521, 7.23884],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_c9b50b15116d70cd6d929c52b3801c7a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_35a4f4d89242f962da816e58fbbebe59 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6808463a31b144fde6fa31141d452a27 = $(`<div id="html_6808463a31b144fde6fa31141d452a27" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 15, 'LCD': 'Log_216', 'Location': ' Mittelstrasse ', 'Longitude': 7.23884, 'Latitude': 47.12521, 'Altitude': 432.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_35a4f4d89242f962da816e58fbbebe59.setContent(html_6808463a31b144fde6fa31141d452a27);
+            
+        
+
+        marker_948090c09ce9705af9c1cc58139ae313.bindPopup(popup_35a4f4d89242f962da816e58fbbebe59)
+        ;
+
+        
+    
+    
+                marker_948090c09ce9705af9c1cc58139ae313.setIcon(icon_c9b50b15116d70cd6d929c52b3801c7a);
+            
+    
+            var marker_86601b09e5b1a3c81b29b76b439a32bb = L.marker(
+                [47.14421, 7.28288],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_9943380bd1e519358ec0ecc04fbb3f02 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4c7c1e89406426701354bd89a1ef8d0f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1db5cadd1302de1654697fdfc59a5b25 = $(`<div id="html_1db5cadd1302de1654697fdfc59a5b25" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 16, 'LCD': 'Log_217', 'Location': ' Scheurenweg ', 'Longitude': 7.28288, 'Latitude': 47.14421, 'Altitude': 447.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_4c7c1e89406426701354bd89a1ef8d0f.setContent(html_1db5cadd1302de1654697fdfc59a5b25);
+            
+        
+
+        marker_86601b09e5b1a3c81b29b76b439a32bb.bindPopup(popup_4c7c1e89406426701354bd89a1ef8d0f)
+        ;
+
+        
+    
+    
+                marker_86601b09e5b1a3c81b29b76b439a32bb.setIcon(icon_9943380bd1e519358ec0ecc04fbb3f02);
+            
+    
+            var marker_a89276b5ee472ed808c1637cf08df1cf = L.marker(
+                [47.1334, 7.24309],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_cc6f5297bb7bc876e18f45c43a2bd9c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9ea03987fe625c4c85c83fe31bb40a91 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e286809a0a4b028b752cb4278f731903 = $(`<div id="html_e286809a0a4b028b752cb4278f731903" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 17, 'LCD': 'Log_218', 'Location': ' Bahnhofplatz ', 'Longitude': 7.24309, 'Latitude': 47.1334, 'Altitude': 433.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_9ea03987fe625c4c85c83fe31bb40a91.setContent(html_e286809a0a4b028b752cb4278f731903);
+            
+        
+
+        marker_a89276b5ee472ed808c1637cf08df1cf.bindPopup(popup_9ea03987fe625c4c85c83fe31bb40a91)
+        ;
+
+        
+    
+    
+                marker_a89276b5ee472ed808c1637cf08df1cf.setIcon(icon_cc6f5297bb7bc876e18f45c43a2bd9c7);
+            
+    
+            var marker_0a02280fa0353b3e73b007d6f82bcdf1 = L.marker(
+                [47.13892, 7.2464],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_f16d4a2b6129f7e97a36a186cddeb9c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f635c84b5d183063d1f824fd968dc0c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1454aa567a3c03d553cb1cb0c15afbb6 = $(`<div id="html_1454aa567a3c03d553cb1cb0c15afbb6" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 18, 'LCD': 'Log_219', 'Location': ' Nidaugasse ', 'Longitude': 7.2464, 'Latitude': 47.13892, 'Altitude': 434.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_7f635c84b5d183063d1f824fd968dc0c.setContent(html_1454aa567a3c03d553cb1cb0c15afbb6);
+            
+        
+
+        marker_0a02280fa0353b3e73b007d6f82bcdf1.bindPopup(popup_7f635c84b5d183063d1f824fd968dc0c)
+        ;
+
+        
+    
+    
+                marker_0a02280fa0353b3e73b007d6f82bcdf1.setIcon(icon_f16d4a2b6129f7e97a36a186cddeb9c9);
+            
+    
+            var marker_4ed83353405e94d4594bad656cfc6cd7 = L.marker(
+                [47.1373, 7.25128],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_1e10b0c6bfc94ead9843715e4da27a4f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae7511b95e1d0f10044a0c58c184fd2a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8b8995445f8a7279a008d796a7b8d861 = $(`<div id="html_8b8995445f8a7279a008d796a7b8d861" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 19, 'LCD': 'Log_220', 'Location': ' Neumarktstrasse ', 'Longitude': 7.25128, 'Latitude': 47.1373, 'Altitude': 433.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_ae7511b95e1d0f10044a0c58c184fd2a.setContent(html_8b8995445f8a7279a008d796a7b8d861);
+            
+        
+
+        marker_4ed83353405e94d4594bad656cfc6cd7.bindPopup(popup_ae7511b95e1d0f10044a0c58c184fd2a)
+        ;
+
+        
+    
+    
+                marker_4ed83353405e94d4594bad656cfc6cd7.setIcon(icon_1e10b0c6bfc94ead9843715e4da27a4f);
+            
+    
+            var marker_53644e63866917e14f5494a85cf5f099 = L.marker(
+                [47.14667, 7.26361],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_ea7dcfa5b06a2709a3f0a897b3eaf209 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cbd22649d27a61c2c5308ec55cd74ff0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fba8738fc56b8b29c38fea7effa95774 = $(`<div id="html_fba8738fc56b8b29c38fea7effa95774" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 20, 'LCD': 'Log_221', 'Location': ' Gurzelen ', 'Longitude': 7.26361, 'Latitude': 47.14667, 'Altitude': 439.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': '2024-08-21', 'Grafana': 'd421976d5959', 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_cbd22649d27a61c2c5308ec55cd74ff0.setContent(html_fba8738fc56b8b29c38fea7effa95774);
+            
+        
+
+        marker_53644e63866917e14f5494a85cf5f099.bindPopup(popup_cbd22649d27a61c2c5308ec55cd74ff0)
+        ;
+
+        
+    
+    
+                marker_53644e63866917e14f5494a85cf5f099.setIcon(icon_ea7dcfa5b06a2709a3f0a897b3eaf209);
+            
+    
+            var marker_3bfed73d81baed9556a610969b5e2a88 = L.marker(
+                [47.14704, 7.24425],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_e4e5da5f2e46e17224b53f7697590c52 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_256344bed782b5ffb64e40aeedf5a1f8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_251c5c959dee57b48e328c95e30b3dc5 = $(`<div id="html_251c5c959dee57b48e328c95e30b3dc5" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 21, 'LCD': 'Log_222', 'Location': ' Vogelsang ', 'Longitude': 7.24425, 'Latitude': 47.14704, 'Altitude': 548.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_256344bed782b5ffb64e40aeedf5a1f8.setContent(html_251c5c959dee57b48e328c95e30b3dc5);
+            
+        
+
+        marker_3bfed73d81baed9556a610969b5e2a88.bindPopup(popup_256344bed782b5ffb64e40aeedf5a1f8)
+        ;
+
+        
+    
+    
+                marker_3bfed73d81baed9556a610969b5e2a88.setIcon(icon_e4e5da5f2e46e17224b53f7697590c52);
+            
+    
+            var marker_e47d039d53c90a82ea675f24e08782ac = L.marker(
+                [47.12586, 7.25734],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_8bdcf9dd4f523283f58c3160331c854f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e69a4d3ad5b9fdcac6dca04c9055d73 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96de055480b651df23098e35d666414c = $(`<div id="html_96de055480b651df23098e35d666414c" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 22, 'LCD': 'Log_223', 'Location': ' Lischenweg ', 'Longitude': 7.25734, 'Latitude': 47.12586, 'Altitude': 433.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_2e69a4d3ad5b9fdcac6dca04c9055d73.setContent(html_96de055480b651df23098e35d666414c);
+            
+        
+
+        marker_e47d039d53c90a82ea675f24e08782ac.bindPopup(popup_2e69a4d3ad5b9fdcac6dca04c9055d73)
+        ;
+
+        
+    
+    
+                marker_e47d039d53c90a82ea675f24e08782ac.setIcon(icon_8bdcf9dd4f523283f58c3160331c854f);
+            
+    
+            var marker_c2d94dea2d265580e560421f18a9ed74 = L.marker(
+                [47.15084, 7.27134],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_2d7c5745bfcfbff452dccee1208a5081 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0d7bed51bf69774598aea1792bc15e83 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_499a0de6ccc3f251c28d7402b63ba52c = $(`<div id="html_499a0de6ccc3f251c28d7402b63ba52c" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 23, 'LCD': 'Log_224', 'Location': ' Buerenstr. ', 'Longitude': 7.27134, 'Latitude': 47.15084, 'Altitude': 441.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_0d7bed51bf69774598aea1792bc15e83.setContent(html_499a0de6ccc3f251c28d7402b63ba52c);
+            
+        
+
+        marker_c2d94dea2d265580e560421f18a9ed74.bindPopup(popup_0d7bed51bf69774598aea1792bc15e83)
+        ;
+
+        
+    
+    
+                marker_c2d94dea2d265580e560421f18a9ed74.setIcon(icon_2d7c5745bfcfbff452dccee1208a5081);
+            
+    
+            var marker_5dbb9235fa4d7eb737fdae3bd9f2bf27 = L.marker(
+                [47.15845, 7.27896],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_bd2586bdfbb079fb33669bcbaa1570c5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fc12a2dc686ce54a85b205d075ed7eea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f928f27836666135b8463c524c0ec3d2 = $(`<div id="html_f928f27836666135b8463c524c0ec3d2" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 24, 'LCD': 'Log_225', 'Location': ' Rodger Federer Allee ', 'Longitude': 7.27896, 'Latitude': 47.15845, 'Altitude': 440.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_fc12a2dc686ce54a85b205d075ed7eea.setContent(html_f928f27836666135b8463c524c0ec3d2);
+            
+        
+
+        marker_5dbb9235fa4d7eb737fdae3bd9f2bf27.bindPopup(popup_fc12a2dc686ce54a85b205d075ed7eea)
+        ;
+
+        
+    
+    
+                marker_5dbb9235fa4d7eb737fdae3bd9f2bf27.setIcon(icon_bd2586bdfbb079fb33669bcbaa1570c5);
+            
+    
+            var marker_e36de1516ca68831343b8f048f220e4a = L.marker(
+                [47.12244, 7.25095],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_9321f1d780822599aacdb722c41948e6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_257ffbc353bd1ed6a8f59017d0fa3ea3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e55d04a3ba7b1bd01106af71f132d1d = $(`<div id="html_8e55d04a3ba7b1bd01106af71f132d1d" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 25, 'LCD': 'Log_226', 'Location': ' Ringstr. ', 'Longitude': 7.25095, 'Latitude': 47.12244, 'Altitude': 431.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_257ffbc353bd1ed6a8f59017d0fa3ea3.setContent(html_8e55d04a3ba7b1bd01106af71f132d1d);
+            
+        
+
+        marker_e36de1516ca68831343b8f048f220e4a.bindPopup(popup_257ffbc353bd1ed6a8f59017d0fa3ea3)
+        ;
+
+        
+    
+    
+                marker_e36de1516ca68831343b8f048f220e4a.setIcon(icon_9321f1d780822599aacdb722c41948e6);
+            
+    
+            var marker_180df0d2afe0f76e0d233f805de3c432 = L.marker(
+                [47.1504, 7.26095],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_e7a554dfe096c7fda288490b24c80ac4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f343cfaf07731aefe1427b732d8905e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7bcaecb37c8486c623b7ad87851ac48c = $(`<div id="html_7bcaecb37c8486c623b7ad87851ac48c" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 26, 'LCD': 'Log_227', 'Location': ' Redern ', 'Longitude': 7.26095, 'Latitude': 47.1504, 'Altitude': 445.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_7f343cfaf07731aefe1427b732d8905e.setContent(html_7bcaecb37c8486c623b7ad87851ac48c);
+            
+        
+
+        marker_180df0d2afe0f76e0d233f805de3c432.bindPopup(popup_7f343cfaf07731aefe1427b732d8905e)
+        ;
+
+        
+    
+    
+                marker_180df0d2afe0f76e0d233f805de3c432.setIcon(icon_e7a554dfe096c7fda288490b24c80ac4);
+            
+    
+            var marker_ad9e6db5be002b74349b520fdc292fa3 = L.marker(
+                [47.14211, 7.27111],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_920453619ae311577bea2d9dcef1b72d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c881aef995ddc0cf9b3b282dc823d862 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_98ebeeac44fe3ae4793939f58c5fb550 = $(`<div id="html_98ebeeac44fe3ae4793939f58c5fb550" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 27, 'LCD': 'Log_228', 'Location': ' Suedstrasse ', 'Longitude': 7.27111, 'Latitude': 47.14211, 'Altitude': 440.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_c881aef995ddc0cf9b3b282dc823d862.setContent(html_98ebeeac44fe3ae4793939f58c5fb550);
+            
+        
+
+        marker_ad9e6db5be002b74349b520fdc292fa3.bindPopup(popup_c881aef995ddc0cf9b3b282dc823d862)
+        ;
+
+        
+    
+    
+                marker_ad9e6db5be002b74349b520fdc292fa3.setIcon(icon_920453619ae311577bea2d9dcef1b72d);
+            
+    
+            var marker_4a5d0bc8fc14481138b4a061ff360edb = L.marker(
+                [47.13571, 7.23864],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_fbe8b0e7b51434cf2adb2d922e9e52ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_25b6c20e520df3f42918b273198c54a3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e46d0d0952393ec0ea1a8b3bf7872e6 = $(`<div id="html_2e46d0d0952393ec0ea1a8b3bf7872e6" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 28, 'LCD': 'Log_229', 'Location': ' Viaduktstrasse ', 'Longitude': 7.23864, 'Latitude': 47.13571, 'Altitude': 432.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_25b6c20e520df3f42918b273198c54a3.setContent(html_2e46d0d0952393ec0ea1a8b3bf7872e6);
+            
+        
+
+        marker_4a5d0bc8fc14481138b4a061ff360edb.bindPopup(popup_25b6c20e520df3f42918b273198c54a3)
+        ;
+
+        
+    
+    
+                marker_4a5d0bc8fc14481138b4a061ff360edb.setIcon(icon_fbe8b0e7b51434cf2adb2d922e9e52ee);
+            
+    
+            var marker_81bb0bafd11afa518da4a919a5ae0097 = L.marker(
+                [47.13093, 7.22097],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_cc67d892efe4af3d6110cc395f42db49 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4523aecb751bbf5e860138c472f9a207 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c1a6eff605dfd3de173915c094c8c048 = $(`<div id="html_c1a6eff605dfd3de173915c094c8c048" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 29, 'LCD': 'Log_230', 'Location': ' Hafen Vingelz ', 'Longitude': 7.22097, 'Latitude': 47.13093, 'Altitude': 433.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_4523aecb751bbf5e860138c472f9a207.setContent(html_c1a6eff605dfd3de173915c094c8c048);
+            
+        
+
+        marker_81bb0bafd11afa518da4a919a5ae0097.bindPopup(popup_4523aecb751bbf5e860138c472f9a207)
+        ;
+
+        
+    
+    
+                marker_81bb0bafd11afa518da4a919a5ae0097.setIcon(icon_cc67d892efe4af3d6110cc395f42db49);
+            
+    
+            var marker_0acda353cc9ccbef8bb948d7cf631d60 = L.marker(
+                [47.12626, 7.23233],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_2e9f9f893f8ae72b0c53e87b3a0b795c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_50fa904ab5247ff2a9f9e86113913323 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d67ac3486047da5dd2011faf8b09570 = $(`<div id="html_2d67ac3486047da5dd2011faf8b09570" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 30, 'LCD': 'Log_231', 'Location': ' Hundemaetteli ', 'Longitude': 7.23233, 'Latitude': 47.12626, 'Altitude': 430.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_50fa904ab5247ff2a9f9e86113913323.setContent(html_2d67ac3486047da5dd2011faf8b09570);
+            
+        
+
+        marker_0acda353cc9ccbef8bb948d7cf631d60.bindPopup(popup_50fa904ab5247ff2a9f9e86113913323)
+        ;
+
+        
+    
+    
+                marker_0acda353cc9ccbef8bb948d7cf631d60.setIcon(icon_2e9f9f893f8ae72b0c53e87b3a0b795c);
+            
+    
+            var marker_dbd2630e642e9203a511c192993de8ec = L.marker(
+                [47.14425, 7.25556],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_e2b1c71402c77d149021f35f74db494c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c7a80848f44ae35d3a7b0003aec86f7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bec6baa5647677aec9db0e34278a73a2 = $(`<div id="html_bec6baa5647677aec9db0e34278a73a2" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 31, 'LCD': 'Log_232', 'Location': ' Blumenstr.', 'Longitude': 7.25556, 'Latitude': 47.14425, 'Altitude': 436.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_1c7a80848f44ae35d3a7b0003aec86f7.setContent(html_bec6baa5647677aec9db0e34278a73a2);
+            
+        
+
+        marker_dbd2630e642e9203a511c192993de8ec.bindPopup(popup_1c7a80848f44ae35d3a7b0003aec86f7)
+        ;
+
+        
+    
+    
+                marker_dbd2630e642e9203a511c192993de8ec.setIcon(icon_e2b1c71402c77d149021f35f74db494c);
+            
+    
+            var marker_244bdc376a91a7c3a66b0d94973d82f2 = L.marker(
+                [47.13315, 7.24939],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_110cb63d99a0681c1f0abdfb2f4c5684 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d5c52ffe8e006baa0cebd6e0a9ed1c9b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_46e11c6669406d89cc8c9a127702a5fc = $(`<div id="html_46e11c6669406d89cc8c9a127702a5fc" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 32, 'LCD': 'Log_233', 'Location': ' KITA Zukunft ', 'Longitude': 7.24939, 'Latitude': 47.13315, 'Altitude': 433.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_d5c52ffe8e006baa0cebd6e0a9ed1c9b.setContent(html_46e11c6669406d89cc8c9a127702a5fc);
+            
+        
+
+        marker_244bdc376a91a7c3a66b0d94973d82f2.bindPopup(popup_d5c52ffe8e006baa0cebd6e0a9ed1c9b)
+        ;
+
+        
+    
+    
+                marker_244bdc376a91a7c3a66b0d94973d82f2.setIcon(icon_110cb63d99a0681c1f0abdfb2f4c5684);
+            
+    
+            var marker_cc834fa8cafef22bb404494f94d4020b = L.marker(
+                [47.15893, 7.29227],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_56ff24de043e04e3fe793380bc941fed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b5aba5088af7625df8f33e63b3ede2d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23d064285e4266567253175bb16ab595 = $(`<div id="html_23d064285e4266567253175bb16ab595" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 33, 'LCD': 'Log_234', 'Location': ' Mohnweg ', 'Longitude': 7.29227, 'Latitude': 47.15893, 'Altitude': 438.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_4b5aba5088af7625df8f33e63b3ede2d.setContent(html_23d064285e4266567253175bb16ab595);
+            
+        
+
+        marker_cc834fa8cafef22bb404494f94d4020b.bindPopup(popup_4b5aba5088af7625df8f33e63b3ede2d)
+        ;
+
+        
+    
+    
+                marker_cc834fa8cafef22bb404494f94d4020b.setIcon(icon_56ff24de043e04e3fe793380bc941fed);
+            
+    
+            var marker_cc399459de7a916b1e475d1cd62b6c85 = L.marker(
+                [47.1507, 7.25656],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_7010dfbd3c207427c989d8322ae3fffb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8ebf55d24883ee54ccf71baabb8e24e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_202a0bb7249b6a6800c8a359ad64dbae = $(`<div id="html_202a0bb7249b6a6800c8a359ad64dbae" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 34, 'LCD': 'Log_235', 'Location': ' Ried ', 'Longitude': 7.25656, 'Latitude': 47.1507, 'Altitude': 498.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_8ebf55d24883ee54ccf71baabb8e24e8.setContent(html_202a0bb7249b6a6800c8a359ad64dbae);
+            
+        
+
+        marker_cc399459de7a916b1e475d1cd62b6c85.bindPopup(popup_8ebf55d24883ee54ccf71baabb8e24e8)
+        ;
+
+        
+    
+    
+                marker_cc399459de7a916b1e475d1cd62b6c85.setIcon(icon_7010dfbd3c207427c989d8322ae3fffb);
+            
+    
+            var marker_bd58c8bf1f62e5ed8514b124545c47f1 = L.marker(
+                [47.15368, 7.26764],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_fb8eb6eccc7195920b5552d76fab2081 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c4297ceec05723e94e7841785466b082 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db3dd48595aac2c5f40786fe4533896f = $(`<div id="html_db3dd48595aac2c5f40786fe4533896f" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 35, 'LCD': 'Log_236', 'Location': ' Taubenloch Sued ', 'Longitude': 7.26764, 'Latitude': 47.15368, 'Altitude': 443.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': '2024-08-21', 'Grafana': '3c9407846a5f', 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_c4297ceec05723e94e7841785466b082.setContent(html_db3dd48595aac2c5f40786fe4533896f);
+            
+        
+
+        marker_bd58c8bf1f62e5ed8514b124545c47f1.bindPopup(popup_c4297ceec05723e94e7841785466b082)
+        ;
+
+        
+    
+    
+                marker_bd58c8bf1f62e5ed8514b124545c47f1.setIcon(icon_fb8eb6eccc7195920b5552d76fab2081);
+            
+    
+            var marker_70911e3c2df62ed75a76b6a0e3dd4b12 = L.marker(
+                [47.16292, 7.29252],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_e9736b096d3eaedb31b300cfb1915465 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cdc00057b1c3435843c91d309111604f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e7180f4f2de329c826df8b095497e08d = $(`<div id="html_e7180f4f2de329c826df8b095497e08d" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 36, 'LCD': 'Log_237', 'Location': ' Lengnaustr. ', 'Longitude': 7.29252, 'Latitude': 47.16292, 'Altitude': 437.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_cdc00057b1c3435843c91d309111604f.setContent(html_e7180f4f2de329c826df8b095497e08d);
+            
+        
+
+        marker_70911e3c2df62ed75a76b6a0e3dd4b12.bindPopup(popup_cdc00057b1c3435843c91d309111604f)
+        ;
+
+        
+    
+    
+                marker_70911e3c2df62ed75a76b6a0e3dd4b12.setIcon(icon_e9736b096d3eaedb31b300cfb1915465);
+            
+    
+            var marker_25772427a518dbce2b1aeffa3b848216 = L.marker(
+                [47.13868, 7.24175],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_ff63ad116182134488722bef728463f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_977da6935b6a85e0044303dcf8d9b883 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a64a72f8344b3c85b8757233688afb17 = $(`<div id="html_a64a72f8344b3c85b8757233688afb17" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 37, 'LCD': 'Log_238', 'Location': ' Schuesspromenade ', 'Longitude': 7.24175, 'Latitude': 47.13868, 'Altitude': 432.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_977da6935b6a85e0044303dcf8d9b883.setContent(html_a64a72f8344b3c85b8757233688afb17);
+            
+        
+
+        marker_25772427a518dbce2b1aeffa3b848216.bindPopup(popup_977da6935b6a85e0044303dcf8d9b883)
+        ;
+
+        
+    
+    
+                marker_25772427a518dbce2b1aeffa3b848216.setIcon(icon_ff63ad116182134488722bef728463f1);
+            
+    
+            var marker_523b93f3aef609a262532c1ec61ffbd8 = L.marker(
+                [47.12548, 7.23324],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_358b58819c7b9eb429a6127a725a3aea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_928613989deff086ede966e3bb10b585 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d847616687863d59e370688b2bdf203 = $(`<div id="html_5d847616687863d59e370688b2bdf203" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 38, 'LCD': 'Log_239', 'Location': ' Weyermattstr. ', 'Longitude': 7.23324, 'Latitude': 47.12548, 'Altitude': 430.0, 'Network': 'Hauptnetz', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_928613989deff086ede966e3bb10b585.setContent(html_5d847616687863d59e370688b2bdf203);
+            
+        
+
+        marker_523b93f3aef609a262532c1ec61ffbd8.bindPopup(popup_928613989deff086ede966e3bb10b585)
+        ;
+
+        
+    
+    
+                marker_523b93f3aef609a262532c1ec61ffbd8.setIcon(icon_358b58819c7b9eb429a6127a725a3aea);
+            
+    
+            var marker_0822088d003f877c149e6d84caa9c8fd = L.marker(
+                [47.13622, 7.26175],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_4f8128089b510de0efbf79ee16eacf75 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_42dd90f7505330372df7b4144ffc9bb2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c4e2f7b48c2249866126350276cb41bb = $(`<div id="html_c4e2f7b48c2249866126350276cb41bb" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 39, 'LCD': 'Log_240', 'Location': ' Mon Desire Weg ', 'Longitude': 7.26175, 'Latitude': 47.13622, 'Altitude': 453.0, 'Network': 'expansion', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_42dd90f7505330372df7b4144ffc9bb2.setContent(html_c4e2f7b48c2249866126350276cb41bb);
+            
+        
+
+        marker_0822088d003f877c149e6d84caa9c8fd.bindPopup(popup_42dd90f7505330372df7b4144ffc9bb2)
+        ;
+
+        
+    
+    
+                marker_0822088d003f877c149e6d84caa9c8fd.setIcon(icon_4f8128089b510de0efbf79ee16eacf75);
+            
+    
+            var marker_b6a17cb0919f69450ef47936dc2a62dc = L.marker(
+                [47.17228, 7.28401],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_57c13b2e87db06e76f0672f653e2ee51 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0d81ad3fd70b90f9e3168a46a5940645 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_07611e9777556f0d751074faefa4c70a = $(`<div id="html_07611e9777556f0d751074faefa4c70a" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 40, 'LCD': 'Log_241', 'Location': ' Boezingenberg ', 'Longitude': 7.28401, 'Latitude': 47.17228, 'Altitude': 929.0, 'Network': 'expansion', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_0d81ad3fd70b90f9e3168a46a5940645.setContent(html_07611e9777556f0d751074faefa4c70a);
+            
+        
+
+        marker_b6a17cb0919f69450ef47936dc2a62dc.bindPopup(popup_0d81ad3fd70b90f9e3168a46a5940645)
+        ;
+
+        
+    
+    
+                marker_b6a17cb0919f69450ef47936dc2a62dc.setIcon(icon_57c13b2e87db06e76f0672f653e2ee51);
+            
+    
+            var marker_7b2e7714b810d2f2523255b7eaad6463 = L.marker(
+                [47.15387, 7.27824],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_f10f236752f79880c38b430641291129 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f4ee53cf4f6da57eeff42f30f88b0586 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_681aa921e8becfb28d4f0b910f97f69c = $(`<div id="html_681aa921e8becfb28d4f0b910f97f69c" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 41, 'LCD': 'Log_242', 'Location': ' Tissot Areal ', 'Longitude': 7.27824, 'Latitude': 47.15387, 'Altitude': 445.0, 'Network': 'expansion', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_f4ee53cf4f6da57eeff42f30f88b0586.setContent(html_681aa921e8becfb28d4f0b910f97f69c);
+            
+        
+
+        marker_7b2e7714b810d2f2523255b7eaad6463.bindPopup(popup_f4ee53cf4f6da57eeff42f30f88b0586)
+        ;
+
+        
+    
+    
+                marker_7b2e7714b810d2f2523255b7eaad6463.setIcon(icon_f10f236752f79880c38b430641291129);
+            
+    
+            var marker_54b2e65a5337e7043bece0f2cad2c188 = L.marker(
+                [47.15588, 7.26796],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_8742b82a3ea6e28cac4372ab93369ecb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e10b6e87565f7797c11df67f2cdf7f4a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eee854d4d553b5e53c69fed21dbacb9b = $(`<div id="html_eee854d4d553b5e53c69fed21dbacb9b" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 42, 'LCD': 'Log_243', 'Location': ' Zollhausstrasse ', 'Longitude': 7.26796, 'Latitude': 47.15588, 'Altitude': 484.0, 'Network': 'expansion', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_e10b6e87565f7797c11df67f2cdf7f4a.setContent(html_eee854d4d553b5e53c69fed21dbacb9b);
+            
+        
+
+        marker_54b2e65a5337e7043bece0f2cad2c188.bindPopup(popup_e10b6e87565f7797c11df67f2cdf7f4a)
+        ;
+
+        
+    
+    
+                marker_54b2e65a5337e7043bece0f2cad2c188.setIcon(icon_8742b82a3ea6e28cac4372ab93369ecb);
+            
+    
+            var marker_ba0f757bf5a8a7020160f77302434c81 = L.marker(
+                [47.15917, 7.26951],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_d642a8067d2ff8ce095a39c1aca95728 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_57c22de26a67c5f87659e84cddd8899b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_25782d4a77933abeb46b152080e235f3 = $(`<div id="html_25782d4a77933abeb46b152080e235f3" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 43, 'LCD': 'Log_244', 'Location': ' Tierpark ', 'Longitude': 7.26951, 'Latitude': 47.15917, 'Altitude': 547.0, 'Network': 'expansion', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_57c22de26a67c5f87659e84cddd8899b.setContent(html_25782d4a77933abeb46b152080e235f3);
+            
+        
+
+        marker_ba0f757bf5a8a7020160f77302434c81.bindPopup(popup_57c22de26a67c5f87659e84cddd8899b)
+        ;
+
+        
+    
+    
+                marker_ba0f757bf5a8a7020160f77302434c81.setIcon(icon_d642a8067d2ff8ce095a39c1aca95728);
+            
+    
+            var marker_c83e32fd20604847e20c4e749b13980f = L.marker(
+                [47.15803, 7.26401],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_8451ac01ece9377309aafcdc68d0c547 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ed2068d66ce580d112c5479782c1d6c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e3b5783923a7fe674ce613b7ceb49271 = $(`<div id="html_e3b5783923a7fe674ce613b7ceb49271" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 44, 'LCD': 'Log_245', 'Location': ' Taubenloch West ', 'Longitude': 7.26401, 'Latitude': 47.15803, 'Altitude': 521.0, 'Network': 'expansion', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_ed2068d66ce580d112c5479782c1d6c1.setContent(html_e3b5783923a7fe674ce613b7ceb49271);
+            
+        
+
+        marker_c83e32fd20604847e20c4e749b13980f.bindPopup(popup_ed2068d66ce580d112c5479782c1d6c1)
+        ;
+
+        
+    
+    
+                marker_c83e32fd20604847e20c4e749b13980f.setIcon(icon_8451ac01ece9377309aafcdc68d0c547);
+            
+    
+            var marker_bcd58755aabca08b1a2b09696a149f9a = L.marker(
+                [47.15602, 7.24889],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_32e43a83706533483464715658e95663 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_55b19a74088dd0153e8157ec34259322 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7735a0b8e8ccd93325a3a135c1bad946 = $(`<div id="html_7735a0b8e8ccd93325a3a135c1bad946" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 45, 'LCD': 'Log_246', 'Location': ' Evilard Quartier ', 'Longitude': 7.24889, 'Latitude': 47.15602, 'Altitude': 681.0, 'Network': 'expansion', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_55b19a74088dd0153e8157ec34259322.setContent(html_7735a0b8e8ccd93325a3a135c1bad946);
+            
+        
+
+        marker_bcd58755aabca08b1a2b09696a149f9a.bindPopup(popup_55b19a74088dd0153e8157ec34259322)
+        ;
+
+        
+    
+    
+                marker_bcd58755aabca08b1a2b09696a149f9a.setIcon(icon_32e43a83706533483464715658e95663);
+            
+    
+            var marker_4f004bba7da74f503c0d40d813b64d6e = L.marker(
+                [47.14997, 7.23944],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_1b1a04abea9980d4c22768a17de6423d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5225e38bf148a970e4eed4e6c976fba6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30a6a4f273b2cc6dde82078972b2ed2a = $(`<div id="html_30a6a4f273b2cc6dde82078972b2ed2a" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 46, 'LCD': 'Log_247', 'Location': ' Evilard Zentrum ', 'Longitude': 7.23944, 'Latitude': 47.14997, 'Altitude': 694.0, 'Network': 'expansion', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_5225e38bf148a970e4eed4e6c976fba6.setContent(html_30a6a4f273b2cc6dde82078972b2ed2a);
+            
+        
+
+        marker_4f004bba7da74f503c0d40d813b64d6e.bindPopup(popup_5225e38bf148a970e4eed4e6c976fba6)
+        ;
+
+        
+    
+    
+                marker_4f004bba7da74f503c0d40d813b64d6e.setIcon(icon_1b1a04abea9980d4c22768a17de6423d);
+            
+    
+            var marker_8e83fcf370f7735de927989801d71546 = L.marker(
+                [47.16992, 7.25999],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_5071bdd7e81dfc470c886ccea461233c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dac012ab771912218b02b930ea1cda9f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b89c06e3a2700878b12746068580d0b = $(`<div id="html_9b89c06e3a2700878b12746068580d0b" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 47, 'LCD': 'Log_248', 'Location': ' Taubenloch Nord ', 'Longitude': 7.25999, 'Latitude': 47.16992, 'Altitude': 572.0, 'Network': 'expansion', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_dac012ab771912218b02b930ea1cda9f.setContent(html_9b89c06e3a2700878b12746068580d0b);
+            
+        
+
+        marker_8e83fcf370f7735de927989801d71546.bindPopup(popup_dac012ab771912218b02b930ea1cda9f)
+        ;
+
+        
+    
+    
+                marker_8e83fcf370f7735de927989801d71546.setIcon(icon_5071bdd7e81dfc470c886ccea461233c);
+            
+    
+            var marker_1f1b451e1c3f6b3eec5ebdb0a0b3acce = L.marker(
+                [47.1603, 7.26285],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_0a6a25fcdb14d1962d3d42e55d6705ec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f4838cbd741aeb09129872ea49af782e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1873cfb63295ac3670585a2d8ffa73d8 = $(`<div id="html_1873cfb63295ac3670585a2d8ffa73d8" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 48, 'LCD': 'Log_249', 'Location': ' Taubenloch Ost ', 'Longitude': 7.26285, 'Latitude': 47.1603, 'Altitude': 593.0, 'Network': 'expansion', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_f4838cbd741aeb09129872ea49af782e.setContent(html_1873cfb63295ac3670585a2d8ffa73d8);
+            
+        
+
+        marker_1f1b451e1c3f6b3eec5ebdb0a0b3acce.bindPopup(popup_f4838cbd741aeb09129872ea49af782e)
+        ;
+
+        
+    
+    
+                marker_1f1b451e1c3f6b3eec5ebdb0a0b3acce.setIcon(icon_0a6a25fcdb14d1962d3d42e55d6705ec);
+            
+    
+            var marker_7527c848ddddf00a44608152b6bb0b28 = L.marker(
+                [47.17903, 7.41504],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_18d74b5fdafde085f9e62ec51150c1d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_815f7bac3acd505a4b729a474e5b06ed = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_321c903a574b5be9f7703a88015d7cba = $(`<div id="html_321c903a574b5be9f7703a88015d7cba" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 49, 'LCD': 'Log_250', 'Location': ' MeteoSchweiz (2m) ', 'Longitude': 7.41504, 'Latitude': 47.17903, 'Altitude': 427.0, 'Network': 'expansion', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_815f7bac3acd505a4b729a474e5b06ed.setContent(html_321c903a574b5be9f7703a88015d7cba);
+            
+        
+
+        marker_7527c848ddddf00a44608152b6bb0b28.bindPopup(popup_815f7bac3acd505a4b729a474e5b06ed)
+        ;
+
+        
+    
+    
+                marker_7527c848ddddf00a44608152b6bb0b28.setIcon(icon_18d74b5fdafde085f9e62ec51150c1d4);
+            
+    
+            var marker_f4ce2998c758e2a4cbaf93de4c7ea2c2 = L.marker(
+                [47.14764, 7.2524],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_c3d30dd94abb82c1e395b3f95c703b62 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eca50241247a2de4df053045a91abc9b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c89d2ecc130ff3a4898bda8350cb4b72 = $(`<div id="html_c89d2ecc130ff3a4898bda8350cb4b72" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 50, 'LCD': 'Log_251', 'Location': ' Sonnhalde ', 'Longitude': 7.2524, 'Latitude': 47.14764, 'Altitude': 474.0, 'Network': 'expansion', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_eca50241247a2de4df053045a91abc9b.setContent(html_c89d2ecc130ff3a4898bda8350cb4b72);
+            
+        
+
+        marker_f4ce2998c758e2a4cbaf93de4c7ea2c2.bindPopup(popup_eca50241247a2de4df053045a91abc9b)
+        ;
+
+        
+    
+    
+                marker_f4ce2998c758e2a4cbaf93de4c7ea2c2.setIcon(icon_c3d30dd94abb82c1e395b3f95c703b62);
+            
+    
+            var marker_57eff5e51162766c46c73fce5b9d1be3 = L.marker(
+                [47.14966, 7.26498],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_b016a9ec6ee5d444eecfa362da1c842e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ee773b95b7e01f898e43d2c5747e2371 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_95e6ea7de2d34022468a67fd7ed4cdb8 = $(`<div id="html_95e6ea7de2d34022468a67fd7ed4cdb8" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 51, 'LCD': 'Log_252', 'Location': ' Sonnenstrasse ', 'Longitude': 7.26498, 'Latitude': 47.14966, 'Altitude': 443.0, 'Network': 'expansion', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_ee773b95b7e01f898e43d2c5747e2371.setContent(html_95e6ea7de2d34022468a67fd7ed4cdb8);
+            
+        
+
+        marker_57eff5e51162766c46c73fce5b9d1be3.bindPopup(popup_ee773b95b7e01f898e43d2c5747e2371)
+        ;
+
+        
+    
+    
+                marker_57eff5e51162766c46c73fce5b9d1be3.setIcon(icon_b016a9ec6ee5d444eecfa362da1c842e);
+            
+    
+            var marker_0c9f447952a113f664dcce58c33683aa = L.marker(
+                [47.14692, 7.27234],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_f56998f377c7c10dfe064f427eeab7cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ed50dc269a3195ca8f828925b6428a3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8af6f6ef1431f92542cb857cb968f79f = $(`<div id="html_8af6f6ef1431f92542cb857cb968f79f" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 52, 'LCD': 'Log_253', 'Location': ' Schulhaus Mett ', 'Longitude': 7.27234, 'Latitude': 47.14692, 'Altitude': 441.0, 'Network': 'expansion', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_0ed50dc269a3195ca8f828925b6428a3.setContent(html_8af6f6ef1431f92542cb857cb968f79f);
+            
+        
+
+        marker_0c9f447952a113f664dcce58c33683aa.bindPopup(popup_0ed50dc269a3195ca8f828925b6428a3)
+        ;
+
+        
+    
+    
+                marker_0c9f447952a113f664dcce58c33683aa.setIcon(icon_f56998f377c7c10dfe064f427eeab7cd);
+            
+    
+            var marker_bda0272642b33821399e5b984958748b = L.marker(
+                [47.14855, 7.28082],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_63ff1a5cfca0db62d057622e6695291d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2726943d40ed55cb7f784055c747b54f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2baa93bab6cb71739ef52f5ae8931619 = $(`<div id="html_2baa93bab6cb71739ef52f5ae8931619" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 53, 'LCD': 'Log_254', 'Location': ' Flurweg ', 'Longitude': 7.28082, 'Latitude': 47.14855, 'Altitude': 460.0, 'Network': 'expansion', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_2726943d40ed55cb7f784055c747b54f.setContent(html_2baa93bab6cb71739ef52f5ae8931619);
+            
+        
+
+        marker_bda0272642b33821399e5b984958748b.bindPopup(popup_2726943d40ed55cb7f784055c747b54f)
+        ;
+
+        
+    
+    
+                marker_bda0272642b33821399e5b984958748b.setIcon(icon_63ff1a5cfca0db62d057622e6695291d);
+            
+    
+            var marker_85dce698a6e0cd7877cc47706063cc93 = L.marker(
+                [47.179097, 7.415144],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_7531a2cea994ebf674cb2c8cf838f405 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dfb029a361dbc46f04fe582b1c11cefa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_825efbb203598b0bd04374fff81aaa2d = $(`<div id="html_825efbb203598b0bd04374fff81aaa2d" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 54, 'LCD': 'Log_255', 'Location': 'Grenchen (SwissMetNet)', 'Longitude': 7.415144, 'Latitude': 47.179097, 'Altitude': 428.0, 'Network': 'expansion', 'Owner': 'Unibe', 'Assembly': 'street lamp', 'Parallel': 'No', 'Launch': '2024-05-15', 'Live': nan, 'Grafana': nan, 'End': '2024-09-15', 'Status': 'inactive'}</div>`)[0];
+                popup_dfb029a361dbc46f04fe582b1c11cefa.setContent(html_825efbb203598b0bd04374fff81aaa2d);
+            
+        
+
+        marker_85dce698a6e0cd7877cc47706063cc93.bindPopup(popup_dfb029a361dbc46f04fe582b1c11cefa)
+        ;
+
+        
+    
+    
+                marker_85dce698a6e0cd7877cc47706063cc93.setIcon(icon_7531a2cea994ebf674cb2c8cf838f405);
+            
+    
+            var marker_c47d774c9356718a333d0664abc8324b = L.marker(
+                [47.14966, 7.26498],
+                {
+}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+            var icon_cc4c29a5c8e5a6e59da798a03a47e7c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a67738a121b022415848c33120c3590 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ee76b2e3791fe71269bd9a226239c600 = $(`<div id="html_ee76b2e3791fe71269bd9a226239c600" style="width: 100.0%; height: 100.0%;">{'Unnamed: 0': 55, 'LCD': 'Log_B1', 'Location': 'Vingelz', 'Longitude': 7.26498, 'Latitude': 47.14966, 'Altitude': 443.0, 'Network': 'Bielometer', 'Owner': 'Stadt Biel', 'Assembly': 'street lamp', 'Parallel': 'NEIN', 'Launch': '2025-05-01', 'Live': '2025-05-01', 'Grafana': '5a000b69e936', 'End': nan, 'Status': 'active'}</div>`)[0];
+                popup_7a67738a121b022415848c33120c3590.setContent(html_ee76b2e3791fe71269bd9a226239c600);
+            
+        
+
+        marker_c47d774c9356718a333d0664abc8324b.bindPopup(popup_7a67738a121b022415848c33120c3590)
+        ;
+
+        
+    
+    
+                marker_c47d774c9356718a333d0664abc8324b.setIcon(icon_cc4c29a5c8e5a6e59da798a03a47e7c1);
+            
+    
+            var polygon_13c29377ab7c1867572f3013b90df952 = L.polygon(
+                [[47.13069, 7.219791], [47.124277, 7.228762], [47.11895, 7.25658], [47.13045, 7.268627], [47.138828, 7.262295], [47.142051, 7.272805], [47.141154, 7.275821], [47.137974, 7.276936], [47.142787, 7.290041], [47.147736, 7.286009], [47.154423, 7.288285], [47.163329, 7.303669], [47.16808, 7.300123], [47.155572, 7.265877], [47.151938, 7.256034], [47.147, 7.241478], [47.143908, 7.240434], [47.136527, 7.234749]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ef370eb89b20a6d830cc7edf9c94c781);
+        
+    
+        var popup_ac946d4c98092f0732ef62f16932f0e6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4351b2904b09ede495172710fa9ec2ad = $(`<div id="html_4351b2904b09ede495172710fa9ec2ad" style="width: 100.0%; height: 100.0%;">Custom Polygon</div>`)[0];
+                popup_ac946d4c98092f0732ef62f16932f0e6.setContent(html_4351b2904b09ede495172710fa9ec2ad);
+            
+        
+
+        polygon_13c29377ab7c1867572f3013b90df952.bindPopup(popup_ac946d4c98092f0732ef62f16932f0e6)
+        ;
+
+        
+    
+</script>
+</html>
